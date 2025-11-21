@@ -1,0 +1,138 @@
+
+.main_footer_bg {
+    background-color: #1f2937;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer_nav_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer_main_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.footer_column {
+    list-style: none;
+    flex: 1;
+    min-width: 180px;
+    margin-bottom: 1.5rem;
+}
+
+.footer_menu_title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #f3f4f6;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li {
+    margin-bottom: 0.4rem;
+}
+
+.submenu li a, .footer_submenu {
+    display: inline-block;
+    color: #9ca3af;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.footer_menu_title:hover {
+    color: #ffffff;
+}
+
+.submenu li a:hover, .footer_submenu:hover {
+    color: #ffffff;
+    transform: translateX(3px);
+}
+
+@media screen and (max-width: 768px) {
+    
+.main_footer_bg{
+    padding: 1.5rem 0;
+}
+    
+.footer_nav_container{
+    padding: 0 1.5rem;
+}
+    
+.footer_main_list{
+    justify-content: center;
+    gap: 30px;
+}
+    
+.footer_column{
+    min-width: 140px;
+    text-align: center;
+}
+    
+.footer_menu_title{
+    font-size: 1rem;
+}
+    
+.submenu li a, .footer_submenu{
+    font-size: 0.9rem;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+    
+.main_footer_bg{
+    padding: 1.5rem 0;
+}
+    
+.footer_nav_container{
+    padding: 0 1rem;
+}
+    
+.footer_main_list{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+    
+.footer_column{
+    width: 100%;
+    min-width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+    
+.footer_menu_title{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+    
+.submenu li a, .footer_submenu{
+    font-size: 0.85rem;
+}
+    
+.submenu li{
+    margin-bottom: 0.3rem;
+}
+    
+.submenu li a:hover, .footer_submenu:hover{
+    transform: none;
+}
+}

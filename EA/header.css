@@ -1,0 +1,146 @@
+header {
+    background-color: black;
+    border-bottom: 1px solid orange;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.website_title {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.website_name {
+    color: #f60;
+    font-size: 1.8rem;
+}
+.ul_header {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_header {
+    position: relative;
+}
+
+.header_submenu_title {
+    color: #00f0ff;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.header_submenu_title:hover {
+    color: orange;
+}
+
+.header1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    padding: 0;
+    min-width: 180px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    list-style: none;
+}
+
+.menu_header:hover .header1 {
+    display: block;
+}
+
+.header1 li a {
+    padding: 10px 15px;
+    color: #00f0ff;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s, background 0.3s;
+}
+
+.header1 li a:hover {
+    color: orange;
+    background-color: rgba(255, 165, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    
+.website_title {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 15px;
+}
+    
+.website_name {
+    font-size: 1.5rem;
+}
+    
+.ul_header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+    
+.header_submenu_title {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+}
+    
+.header1 {
+    min-width: 150px;
+ }
+}
+
+@media screen and (max-width: 480px) {
+   
+.website_title {
+    padding: 10px;
+}
+    
+.website_name {
+    font-size: 1.3rem;
+}
+    
+.ul_header {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+    
+.menu_header {
+    width: 100%;
+    text-align: center;
+}
+    
+.header_submenu_title {
+    font-size: 0.85rem;
+    padding: 8px;
+}
+    
+.header1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+    
+.header1 li a {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    }
+}
+
