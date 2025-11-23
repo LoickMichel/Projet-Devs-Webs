@@ -387,8 +387,8 @@ p{
 }
 
 
-/*media queries pour moyen écrans*/
-@media screen and (max-width: 768px) {
+/*media queries pour grands écrans*/
+@media screen and (max-width: 1280px) {
     
 h1{
     font-size: 35px;
@@ -412,6 +412,7 @@ p{
     
 .bouton-histoire{
     left: 50px;
+
 }
     
 .image-lot1, .image-lot2{
@@ -429,8 +430,8 @@ p{
 }
     
 .bouton{
-    left: 250px;
-    bottom: 250px;
+    position: relative;
+    top: 30px;
 }
     
 .actu1, .actu2{
@@ -443,7 +444,7 @@ p{
 }
 }
    
-/*media queries pour grand écrans*/
+/*media queries pour petits écrans*/
 @media screen and (max-width: 480px) {
     
 h1{
