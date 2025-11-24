@@ -1,3 +1,4 @@
+<!-- Meta element -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,17 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mobius Digital</title>
 <link rel="stylesheet" href="Mobius.css">
-<link rel="stylesheet" href="../header_nosticky.css">
+<link rel="stylesheet" href="../header_2.css">
 <link rel="stylesheet" href="../footer.css">
 </head>
 
+<!-- Bouton up/down -->
 <a href="#start" class="btn-top" aria-label="Remonter en haut">⏶</a>
 <a href="#end" class="btn-bottom" aria-label="Descendre la page">⏷</a>
 
 <body>
+    <!-- Header -->
     <header>
             <nav class="website_title">
-                <h1 class="website_name">Geekadia</h1>
+                <a href="../index.html" class="none">
+                    <h1 class="website_name">Geekadia</h1>
+                </a>
                 <ul class="ul_header">
                     <li class="menu_header"><a href="../index.html" class="header_submenu_title">Accueil</a></li>
                     <li class="menu_header">
@@ -50,6 +55,7 @@
         </header>
 
     <main>
+        <!-- Main parallax -->
         <div class="parallax">
             <anchor id="start"></anchor>
             <anchor id="presentation"></anchor>
@@ -68,7 +74,8 @@
             <section class="parallax-calque planete">
                 <img src="Ressources/Parallax/4E2NqJY.png" alt="planete">
             </section>
-
+            
+            <!-- Ancre histoire  -->
             <section class="histoire" id="anchorhistoire">  
                 <div class="histoireflex">
                     <img src="Ressources/Masi_Oka_Photo.png" alt="Une photo de Masi Oka">
@@ -101,7 +108,9 @@
                     </div>
                     <img src="Ressources/TeamPicture.png" alt="Une photo de l'équipe de Mobius Digital">
                 </div>
-                </section>
+            </section>
+
+            <!-- Ancre jeux -->
             <section class="catalogue" id="jeux">
                         <h1 class="titretexte center"> Leur catalogue </h1>
                         <div class ="row">
@@ -121,11 +130,13 @@
                                 </a>
                             </div>
                         </div>
-                </section>
+            </section>
+
+            <!-- Ancre actualités -->
             <section class="actus" id="actus">
                 <h1 class="titretexte2 center"> Actualités à la une </h1>
                 <video autoplay muted loop id="bottom_loop">
-                    <source src="Ressources/loop_outerwilds.mp4" class="parallax-image">
+                    <source src=".//Ressources/Wallpaper-outerwilds.mp4" class="parallax-image">
                 </video>
                 <div class="colonne2">
                     <div class="actu1">
@@ -155,71 +166,48 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <h3 class="titre-reseaux">Suivez EA sur leur réseaux sociaux!</h3>
-                <section class="reseaux">
-                    <a href="https://www.facebook.com/EA/" target="_blank" alt="lien Facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://twitter.com/EA" target="_blank" alt="lien Twitter">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@electronicarts" target="_blank" alt="lien Youtube">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a href="https://www.instagram.com/electronicarts/" target="_blank" alt="lien Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.twitch.tv/electronicarts" target="_blank" alt="lien Twitch">
-                        <i class="fa-brands fa-twitch"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/electronic-arts/" target="_blank" alt="lien linkedin">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </section>
-            </section>
 
-
-        <footer id="end" class="main_footer_bg enbas">
-            <nav class="footer_nav_container">
-                <ul class="footer_main_list">
-                    <li class="footer_column">
-                        <a href="fansite1/EA.html" class="footer_menu_title">Electronic Arts</a>
-                        <ul class="submenu">
-                            <li><a href="fansite1/EA.html#presentation">Présentation</a></li>
-                            <li><a href="fansite1/EA.html#jeux">Jeux</a></li>
-                            <li><a href="fansite1/EA.html#actus">Actualité</a></li>
-                        </ul>
-                    </li>
-                    <li class="footer_column">
-                        <a href="fansite2/fansiteCD.html" class="footer_menu_title">CD Projekt Red</a>
-                        <ul class="submenu">
-                            <li><a href="fansite2/fansiteCD.html#presentation">Présentation</a></li>
-                            <li><a href="fansite2/fansiteCD.html#actus">Actualité</a></li>
-                            <li><a href="fansite2/fansiteCD.html#jeux">Jeux</a></li>
-                        </ul>
-                    </li>
-                    <li class="footer_column">
-                        <a href="Mobius.html" class="footer_menu_title">Mobius Digital</a>
-                        <ul class="submenu">
-                            <li><a href="Mobius.html#presentation" class="footer_submenu">Présentation</a></li>
-                            <li><a href="Mobius.html#jeux" class="footer_submenu">Jeux</a></li>
-                            <li><a href="Mobius.html#actus" class="footer_submenu">Actualité</a></li>
-                        </ul>
-                    </li>
-                    <li class="footer_column">
-                        <a class="footer_menu_title">Autres</a>
-                        <ul class="submenu">
-                            <li><a href="../index.html" class="footer_submenu">Accueil</a></li>
-                            <li><a href="https://entreprendre.service-public.gouv.fr/vosdroits/F31228" class="footer_submenu">Mention Légal</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="footer_submenu">A propos</a></li>
-                            <li><a href="https://letmegooglethat.com/?q=Cherche+sur+reddit" class="footer_submenu">Centre d’assistance</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </footer id="end">    
+            <!-- Footer -->
+            <footer id="end" class="main_footer_bg enbas">
+                <nav class="footer_nav_container">
+                    <ul class="footer_main_list">
+                        <li class="footer_column">
+                            <a href="../fansite1/EA.html" class="footer_menu_title">Electronic Arts</a>
+                            <ul class="submenu">
+                                <li><a href="../fansite1/EA.html#presentation">Présentation</a></li>
+                                <li><a href="../fansite1/EA.html#jeux">Jeux</a></li>
+                                <li><a href="../fansite1/EA.html#actus">Actualité</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer_column">
+                            <a href="../fansite2/fansiteCD.html" class="footer_menu_title">CD Projekt Red</a>
+                            <ul class="submenu">
+                                <li><a href="../fansite2/fansiteCD.html#presentation">Présentation</a></li>
+                                <li><a href="../fansite2/fansiteCD.html#actus">Actualité</a></li>
+                                <li><a href="../fansite2/fansiteCD.html#jeux">Jeux</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer_column">
+                            <a href="Mobius.html" class="footer_menu_title">Mobius Digital</a>
+                            <ul class="submenu">
+                                <li><a href="Mobius.html#presentation" class="footer_submenu">Présentation</a></li>
+                                <li><a href="Mobius.html#jeux" class="footer_submenu">Jeux</a></li>
+                                <li><a href="Mobius.html#actus" class="footer_submenu">Actualité</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer_column">
+                            <a class="footer_menu_title">Autres</a>
+                            <ul class="submenu">
+                                <li><a href="../index.html" class="footer_submenu">Accueil</a></li>
+                                <li><a href="https://entreprendre.service-public.gouv.fr/vosdroits/F31228" class="footer_submenu">Mention Légal</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="footer_submenu">A propos</a></li>
+                                <li><a href="https://letmegooglethat.com/?q=Cherche+sur+reddit" class="footer_submenu">Centre d’assistance</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </footer id="end">    
         </div>
     </main>
 

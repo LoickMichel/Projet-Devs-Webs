@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-html{
+html, body {
     background-color: black;
     margin:0;
     width:100%;
+    overflow: hidden;
 }
 
 .main {
-    overflow-x: hidden;
+    overflow: hidden;
     scroll-behavior : smooth
 
 }

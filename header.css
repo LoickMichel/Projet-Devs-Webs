@@ -45,6 +45,10 @@ header {
     font-family: 'Montserrat', sans-serif;
 }
 
+.none {
+    text-decoration:none;
+}
+
 .header_submenu_title:hover {
     color: orange;
 }
