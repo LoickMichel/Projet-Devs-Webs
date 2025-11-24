@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    background-color: black;
+    margin:0;
+    width:100%;
+}
+
+.main {
+    overflow-x: hidden;
+    scroll-behavior : smooth
+
+}
+
+.btn-bottom {
+    position: fixed;    
+    right: 20px;        
+    bottom: 20px;       
+    font-size: 30px;    
+    text-decoration: none;
+    color: cyan;
+    padding: 8px 12px;
+    border-radius: 5px;
+    z-index:200;
+}
+
+.btn-bottom:hover {
+    color: orange;
+}
+
+.btn-top {
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    font-size: 30px;
+    text-decoration: none;
+    color: cyan;
+    padding: 8px 12px;
+    border-radius: 5px;
+    z-index:200;
+}
+
+.btn-top:hover {
+    color: orange;
+}
+
+/* Parallaxe */
+
+#BG_loop {
+    top: 0;
+    left: 0;
+    width:100vw;
+    object-fit:cover;
+    z-index:-1;
+    position:absolute;
+}
+
+#bottom_loop {
+    top:0;
+    left: 0;
+    object-fit:cover;
+    z-index:-1;
+    position:absolute;
+}
+
+.parallax {
+    min-height:100vh;
+    overflow-x: hidden;
+    overflow-y: visible;
+    perspective:1px;
+    position:relative;
+}
+
+.parallax-calque {
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background {
+    transform:translateZ(-0.8px) scale(2);
+    z-index:-1;
+}
+
+.foret {
+    transform:translateZ(-0.3px) scale(2.3);
+    z-index:2;
+    top:1700px;
+}
+
+.logo {
+    transform:translateZ(-4px) scale(100%);
+    top:-50%;
+    z-index:0;
+}
+
+.planete {
+    transform:translateZ(-0.1px) scale(2.8);
+    z-index:1;
+    top:1400px;
+}
+
+/* Section 2 : Histoire */
+.histoire {
+    position:absolute;
+    top:300vh;
+    height:200vh;
+    width:100%;
+    z-index:10;
+    color:white;
+    background-color:rgba(0, 0, 0, 0);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding-top:300px;
+    gap:200px;
+}
+
+.histoireflex {
+    position:relative;
+    display:flex;
+    height:90%;
+    width:90vw;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    z-index:0;
+    background-color:rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.histoireflex img{
+    width: 40%;
+    height:80%;
+    object-fit: scale-down;
+    margin-left:30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.histoireflex img:hover {
+    transform: scale(1.02)
+
+}
+
+.histoiretexte {
+    display:flex;
+    flex-direction: column;
+    height:90vh;
+    justify-content: center;
+}
+
+
+
+.paragraphe {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight:300;
+}
+
+.paragraphe2 {
+    padding-top:30px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight:300;
+}
+
+.histoireflex2 {
+    position:relative;
+    display:flex;
+    height:90%;
+    width:90vw;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    z-index:0;
+    background-color:rgb(0, 0, 0);
+    overflow: hidden;
+    padding-bottom:75px;
+}
+
+.histoireflex2 img{
+    width: 40%;
+    height:80%;
+    object-fit: cover;
+    margin-left:30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.histoireflex2 img:hover {
+    transform: scale(1.02)
+
+}
+
+/* Section 3 : Catalogue */
+
+.catalogue {
+    position:absolute;
+    top:550vh;
+    height:75vh;
+    width:100vw;
+    z-index:10;
+    color:white;
+    background-color:rgb(0, 0, 0);
+    display:flex;
+    gap:50px;
+    flex-direction:column;
+}
+
+.colonne {
+    display:flex;
+    flex-direction: column;
+    width:50vh;
+}
+.slides {
+    width:50vh;
+    height:auto;
+    object-fit:cover;
+    border-radius: 20px;
+    border: 3px solid #63b8d9;
+    transition: transform 0.2s ease-in-out;
+}
+
+.slides:hover {
+    transform:scale(1.1);
+    border: 3px solid rgb(247, 125, 44);
+}
+
+.row {
+    display:flex;
+    flex-direction:row;
+    width:100vw;
+    justify-content: center;
+    gap:40px;
+}
+
+.row2 {
+    display:flex;
+    flex-direction:row;
+    width:100vw;
+    justify-content: left;
+    gap:40px;
+}
+
+.colonnecentre {
+    display:flex;
+    justify-content: center;
+}
+
+/* Actus */
+
+.colonne2 {
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    width:40vw;
+    padding-left:15vw;
+    padding-top:5vw;
+}
+
+.logoarticle{
+    width:80%;
+    height:20%;
+    object-fit:cover;
+}
+
+.actu1 {
+    position:relative;
+    width:100%;
+}
+.titrearticle:hover {
+    color:orange;
+}
+
+
+.colonneactus {
+    position:relative;
+    top:650vh;
+    left:0;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom:20vh;
+}
+
+.imgtitre {
+    width:100%;
+    height:20vh;
+    object-fit:cover;
+    position:absolute;
+    z-index:0;
+    transform:translate(-50%);
+    filter:blur(3px);
+}
+
+.textesurimg {
+    position:absolute;
+    z-index:1;
+    width:100%;
+    transform:translate(-50%);
+    overflow:hidden;
+}
+
+.paragraphe_article {
+    position: relative;
+    margin-top: 225px;
+    width: 50vw;
+    text-align: center;
+}
+
+.actus {
+    position:absolute;
+    top:650vh;
+    height:5vh;
+    width:100vw;
+}
+
+.traitblanc {
+    border:1px solid white;
+    width:30vw;
+}
+
+.nomargin {
+    margin:1;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+/* Effets de texte */
+.glow {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 2px #ffffff50, 0 0 5px #ffffff50, 0 0 7px #5db4d6, 0 0 10px #5db4d6, 0 0 12px #5db4d6, 0 0 15px #5db4d6, 0 0 18px #5db4d6;
+  }
+  to {
+    text-shadow: 0 0 5px #ffffff50, 0 0 8px #5db4d6, 0 0 10px #5db4d6, 0 0 13px #5db4d6, 0 0 15px #5db4d6, 0 0 18px #5db4d6, 0 0 21px #5db4d6;
+  }
+}
+
+.center {
+    display:flex;
+    justify-content: center;
+}
+
+.titretexte {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight:300;
+}
+
+.titretexte2 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight:300;
+    color:white;
+}
+
+.paddingtitre {
+    padding-top:100px;
+    padding-bottom:75px;
+}
+
+.titrearticle {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight:300;
+    font-size:1.5vw;
+    color:white;
+    text-shadow: 4px 2px 4px black;
+}
+
+.textearticle {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight:100;
+    color:white;
+    font-size:20px;
+}
+
+.enbas {
+    position:relative;
+    top:750vh;
+}
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    #BG_loop {
+        height:100vh;
+    }
+
+    .logo {
+        transform:translateZ(-4px) scale(1);
+        top:-300px;
+    }
+
+    .planete {
+    transform:translateZ(-0.1px) scale(1.5);
+    top:900px;
+    }
+
+    .foret {
+        transform:translateZ(-0.3px) scale(1.5);
+        top:1100px;
+    }
+
+    .histoire {
+        top:250vh;
+    }
+
+    .histoireflex {
+        flex-direction: column;
+        overflow:visible;
+    }
+
+    .histoireflex img{
+        width:60%;
+        height:60%;
+        margin-left:0px;
+        margin-bottom:5vh;
+}
+
+    .paddingtitre {
+        padding-top:1vh;
+        padding-bottom:50px;
+    }
+
+    .histoireflex2 {
+        flex-direction: column;
+        overflow:visible;
+    }
+
+    .histoireflex2 img{
+        width:60%;
+        height:6%0%;
+        margin-left:0px;
+}
+
+    .catalogue {
+        top:550vh;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .colonne {
+    width:100%;
+    align-items: center;
+    }
+
+    .slides {
+        width:80vw;
+    }
+
+    .actus {
+        top:665vh;
+    }
+
+    #bottom_loop {
+        width:400vw;
+        left:auto;
+        right:-100vw;
+    }
+
+    .titrearticle {
+        font-size:4vw;
+    }
+
+    .textearticle {
+        font-size:3.5vw;
+    }
+}
+
+@media (min-width:600px) {
+    #BG_loop {
+        height:100vh;
+    }
+
+    .logo {
+        transform:translateZ(-4px) scale(1);
+        top:-300px;
+    }
+
+    .planete {
+    transform:translateZ(-0.1px) scale(1.5);
+    top:900px;
+    }
+
+    .foret {
+        transform:translateZ(-0.3px) scale(1.5);
+        top:1100px;
+    }
+
+    .histoire {
+        top:200vh;
+    }
+
+    .histoireflex {
+        flex-direction: column;
+        overflow:visible;
+    }
+
+    .histoireflex img{
+        width:60%;
+        height:6%0%;
+        margin-left:0px;
+}
+
+    .paddingtitre {
+        padding-top:1vh;
+        padding-bottom:50px;
+    }
+
+    .histoireflex2 {
+        flex-direction: column;
+        overflow:visible;
+    }
+
+    .histoireflex2 img{
+        width:60%;
+        height:6%0%;
+        margin-left:0px;
+}
+
+    .catalogue {
+        top:475vh;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .colonne {
+    width:100%;
+    align-items: center;
+    }
+
+    .slides {
+        width:80vw;
+    }
+
+    .actus {
+        top:625vh;
+    }
+
+    #bottom_loop {
+        width:400vw;
+        left:auto;
+        right:-100vw;
+    }
+
+    .titrearticle {
+        font-size:4vw;
+    }
+
+    .textearticle {
+        font-size:3.5vw;
+    }
+}
+
+
+@media (min-width:992px) {
+    #BG_loop {
+        height:100vh;
+    }
+
+    .logo {
+        transform:translateZ(-4px) scale(1);
+        top:-300px;
+    }
+
+    .planete {
+    transform:translateZ(-0.1px) scale(1.9);
+    top:1200px;
+    }
+
+    .foret {
+        transform:translateZ(-0.3px) scale(1.9);
+        top:1400px;
+    }
+
+    .histoire {
+        top:300vh;
+    }
+
+    .histoireflex {
+        flex-direction: row;
+    }
+
+    .histoireflex2 {
+        flex-direction: row;
+    }
+
+    .paddingtitre {
+        padding-top:1vh;
+        padding-bottom:50px;
+    }
+
+    .histoireflex2 img{
+        width:60%;
+        height:6%0%;
+        margin-left:0px;
+}
+
+    .catalogue {
+        top:550vh;
+    }
+
+    .row {
+        flex-direction: row;
+        gap:0px;
+    }
+
+    .colonne {
+    width:100%;
+    align-items: center;
+    }
+
+    .slides {
+        width:30vw;
+    }
+
+    .actus {
+        top:625vh;
+    }
+
+    #bottom_loop {
+        width:200vw;
+        left:auto;
+        right:-50vw;
+    }
+
+    .titrearticle {
+        font-size:2.5vw;
+    }
+
+    .textearticle {
+        font-size:2vw;
+    }
+}
+
+@media (min-width:1200px) {
+    
+    #BG_loop {
+        height:150vh;
+    }
+
+    .logo {
+        transform:translateZ(-4px) scale(1);
+        top:-300px;
+    }
+
+    .planete {
+    transform:translateZ(-0.1px) scale(2.8);
+    top:1700px;
+    }
+
+    .foret {
+        transform:translateZ(-0.3px) scale(2.7);
+        top:1900px;
+    }
+
+    .histoire {
+        top:400vh;
+    }
+
+    .histoireflex {
+        flex-direction: row;
+    }
+
+    .histoireflex2 {
+        flex-direction: row;
+    }
+
+    .paddingtitre {
+        padding-top:1vh;
+        padding-bottom:50px;
+    }
+
+    .histoireflex2 img{
+        width:60%;
+        height:6%0%;
+        margin-left:0px;
+}
+
+    .catalogue {
+        top:650vh;
+    }
+
+    .row {
+        flex-direction: row;
+        gap:0px;
+    }
+
+    .colonne {
+    width:80%;
+    align-items: center;
+    }
+
+    .slides {
+        width:25vw;
+    }
+
+    .actus {
+        top:725vh;
+        height:90vh;
+    }
+
+    #bottom_loop {
+        width:100vw;
+        left:0;
+        right:0;
+    }
+
+    .titrearticle {
+        font-size:1.5vw;
+    }
+
+    .traitblanc {
+        border: 2px solid white;
+    }
+
+    .textearticle {
+        font-size:1vw;
+    }
+
+    .enbas {
+    position:relative;
+    top:820vh;
+    }
+}
+
+@media (min-width:2000px) {
+
+    #BG_loop {
+        height:150vh;
+    }
+
+    .logo {
+        transform:translateZ(-4px) scale(1);
+        top:-300px;
+    }
+
+    .planete {
+    transform:translateZ(-0.1px) scale(2.6);
+    top:175Vh;
+    }
+
+    .foret {
+        transform:translateZ(-0.3px) scale(2.3);
+        top:200vh;
+    }
+
+    .histoire {
+        top:300vh;
+    }
+
+    .histoireflex {
+        flex-direction: row;
+    }
+
+    .histoireflex img{
+        width:40vw;
+        height:40vw;
+        margin-left:0px;
+        object-fit: contain;
+}
+    .titretexte {
+        font-size:3vw;
+    }
+
+    .paragraphe {
+        font-size:1.2vw;
+    }
+    
+    .paragraphe2 {
+        font-size:1.2vw;
+    }
+
+    .histoireflex2 {
+        flex-direction: row;
+    }
+
+    .paddingtitre {
+        padding-top:1vh;
+        padding-bottom:50px;
+    }
+
+    .histoireflex2 img{
+        width:60%;
+        height:6%0%;
+        margin-left:0px;
+}
+
+    .catalogue {
+        top:525vh;
+    }
+
+    .row {
+        flex-direction: row;
+        gap:0px;
+    }
+
+    .colonne {
+    width:80%;
+    align-items: center;
+    }
+
+    .slides {
+        width:25vw;
+    }
+
+    .actus {
+        top:625vh;
+        height:90vh;
+    }
+
+    #bottom_loop {
+        width:100vw;
+        left:0;
+        right:0;
+    }
+
+    .titrearticle {
+        font-size:2vw;
+    }
+
+    .textearticle {
+        font-size:1vw;
+    }
+    
+    .traitblanc {
+       border: 2px solid white;
+    }
+    .titretexte2 {
+        font-size:2vw;
+    }
+
+    .enbas {
+    position:relative;
+    top:725vh;
+    height:20vh;
+    }
+
+    .btn-top {
+        font-size:2vw;
+        bottom:75px;
+    }
+
+    .btn-bottom {
+        font-size:2vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

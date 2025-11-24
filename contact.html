@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulaire de Contact</title>
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="header.css">
+</head>
+
+
+
+<body>
+  <header>
+      <nav class="website_title">
+          <h1 class="website_name">Geekadia</h1>
+          <ul class="ul_header">
+              <li class="menu_header"><a href="index.html" class="header_submenu_title">Accueil</a></li>
+              <li class="menu_header">
+                  <a href="fansite1/EA.html" class="header_submenu_title">Electronic Arts ▼</a>
+                  <ul class="header1">
+                      <li><a href="https://www.ea.com/fr-fr/news" class="header_submenu">Actualité</a></li>
+                      <li><a href="https://www.ea.com/fr-fr/about" class="header_submenu">Présentation</a></li>
+                      <li><a href="https://www.ea.com/fr-fr/games" class="header_submenu">Jeux</a></li>
+                  </ul>
+              </li>
+              <li class="menu_header">
+                  <a href="fansite2/fansiteCD.html" class="header_submenu_title">CD Projekt Red ▼</a>
+                  <ul class="header1">
+                      <li><a href="https://press.cdprojektred.com/fr/news" class="header_submenu">Actualité</a></li>
+                      <li><a href="https://www.cdprojektred.com/en/about-us" class="header_submenu">Présentation</a></li>
+                      <li><a href="gallery.html" class="header_submenu">Galerie</a></li>
+                  </ul>
+              </li>
+              <li class="menu_header">
+                  <a href="fansite3/Mobius.html" class="header_submenu_title">Mobius Digital ▼</a>
+                  <ul class="header1">
+                      <li><a href="https://www.mobiusdigitalgames.com/news" class="header_submenu">Actualité</a></li>
+                      <li><a href="https://www.mobiusdigitalgames.com/team.html" class="header_submenu">Présentation</a></li>
+                      <li><a href="https://www.mobiusdigitalgames.com/games.html" class="header_submenu">Jeux</a></li>
+                  </ul>
+              </li>
+              <li class="menu_header">
+                  <a href="contact.html" class="header_submenu_title">Contact</a>
+              </li>
+          </ul>
+      </nav>
+
+  </header>
+
+
+<div class="container-form">
+  <div class="contact-form">
+    <form action="">
+    <h2>Contactez-nous</h2>
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

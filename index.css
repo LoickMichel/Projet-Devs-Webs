@@ -1,0 +1,329 @@
+/* Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.legend {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 20px;
+}
+.legend img.Gb {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.legend::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, black);
+}
+.legend .legend-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+}
+.legend h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, orange,cyan);
+    margin-bottom: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.legend p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+
+.publishers {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+.publishers h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, cyan, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.publishers p {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+.publisher-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.publisher-card {
+    position: relative;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.05), rgba(255,255,255,0.1));
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+.publisher-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255,102,0,0.5);
+}
+.none {
+    text-decoration: none;
+    color:white;
+}
+.publisher-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.publisher-card:hover img {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+.publisher-card .gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(255,102,0,0.4), transparent);
+    opacity: 0.4;
+    transition: opacity 0.5s;
+}
+.publisher-card:hover .gradient-overlay {
+    opacity: 0.6;
+}
+.publisher-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+}
+.publisher-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.publisher-content p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+.publisher-content .games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.publisher-content .games span {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 999px;
+    backdrop-filter: blur(3px);
+    background: black;
+}
+
+.stats {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom right, rgba(128,0,128,0.2), rgba(0,255,255,0.2));
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    text-align: center;
+    gap: 20px;
+}
+.stats-grid h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00f0ff, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+.stats-grid span {
+    color: #ccc;
+}
+
+
+.btn-bottom {
+    position: fixed;    
+    right: 20px;        
+    bottom: 20px;       
+    font-size: 30px;    
+    text-decoration: none;
+    color: cyan;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.btn-bottom:hover {
+    color: orange;
+}
+
+.btn-top {
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    font-size: 30px;
+    text-decoration: none;
+    color: cyan;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.btn-top:hover {
+    color: orange;
+}
+
+.main_footer_bg {
+    background-color: #1f2937;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer_nav_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer_main_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.footer_column {
+    list-style: none;
+    flex: 1;
+    min-width: 180px;
+    margin-bottom: 1.5rem;
+}
+
+.footer_menu_title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #f3f4f6;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li {
+    margin-bottom: 0.4rem;
+}
+
+.submenu li a, .footer_submenu {
+    display: inline-block;
+    color: #9ca3af;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.footer_menu_title:hover {
+    color: #ffffff;
+}
+
+.submenu li a:hover, .footer_submenu:hover {
+    color: #ffffff;
+    transform: translateX(3px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 992px) {
+    .website_title {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ul_header {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .legend h1 {
+        font-size: 2.2rem;
+    }
+    .legend p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .website_name {
+        font-size: 1.4rem;
+    }
+
+    .header_submenu_title {
+        font-size: 0.95rem;
+    }
+
+    .legend h1 {
+        font-size: 1.8rem;
+    }
+
+    .publishers h2 {
+        font-size: 2rem;
+    }
+
+    .publisher-card {
+        height: 280px;
+    }
+
+    .publisher-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .btn-top, .btn-bottom {
+        right: 15px;
+        font-size: 26px;
+    }
+}
+
